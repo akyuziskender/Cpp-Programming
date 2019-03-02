@@ -1,0 +1,12 @@
+At first, I have created 4 queues. One is for the all patients, and the other three are for the patients' compleint type.
+
+Before starting to heal patients, I read the file and add the patients to the queue whose name is Patients.
+
+After this step, I start to recover them.
+While recovering the patients in the queues, I also add patients to queues (R or Y or G) when their arriving time comes.
+If the patient has RED compleint, I heal him/her for 1 treatment time. If s/he still needs treatment, then I add him/her to the YELLOW queue; otherwise, s/he will be deleted.
+If the patient has YELLOW compleint, I heal him/her for 2 treatment time. If s/he still needs treatment, then I add him/her to the GREEN queue; otherwise, s/he will be deleted.
+If the patient has GREEN compleint, I heal him/her for 3 treatment time. If s/he still needs treatment, then I add him/her to the GREEN queue again untill s/he becomes well, then s/he will be deleted.
+
+I do this recover steps untill all 4 queue become empty.
+Finally, after closing the queues, I terminate the program.
